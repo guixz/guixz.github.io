@@ -1,0 +1,86 @@
+.main-bg {
+  background: url(../img/dec/bottom-left.svg) no-repeat var(--c12) bottom 150px left 40px;
+  box-shadow: inset 0 -120px 0 0 var(--w);
+}
+
+.main.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 0 40px;
+}
+
+.main-conteudo {
+  padding-bottom: 200px;
+}
+
+.main-conteudo h1 {
+  margin-bottom: 32px;
+}
+
+.main-conteudo p {
+  margin-bottom: 20px;
+}
+
+.main.container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-bg {
+    box-shadow: inset 0 -40px 0 0 var(--w);
+    background: var(--c12);
+  }
+  .main-conteudo {
+    padding-bottom: 0px;
+    align-self: center;
+    background: url(../img/dec/bottom-right.svg) no-repeat;
+    background-position: bottom right;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-conteudo h1 {
+    padding-top: 40px;
+  }
+
+  .main-conteudo {
+    padding-bottom: 80px;
+    background-position: bottom 80px right;
+  }
+
+  .main.container img {
+    width: 100%;
+    height: 100%;
+    object-position: right bottom;
+  }
+  @media screen and (max-width: 600px) {
+    .main.container img {
+      display: none;
+    }
+    .main-conteudo {
+      grid-column: 1 / -1;
+      padding-bottom: 20px;
+      background-position: bottom 20px right;
+    }
+
+    .main-conteudo p {
+      max-width: 40ch;
+      margin-bottom: 20px;
+    }
+    .main-conteudo h1 {
+      max-width: 15ch;
+    }
+    .main-bg {
+      box-shadow: none;
+      background: var(--c12);
+      padding-bottom: 20px;
+    }
+  }
+}

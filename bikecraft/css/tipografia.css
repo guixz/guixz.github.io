@@ -1,0 +1,112 @@
+.font-1-xxl {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+
+.font-1-xl {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.font-1-l {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.font-2-l {
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.font-2-l-b {
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.font-1-m {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+.font-1-m-b {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+.font-2-m {
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+.font-1-s {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-2-s {
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-2-xs {
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.42;
+}
+
+.font-1-xs {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+@media screen and (max-width: 600px) {
+  .font-1-xxl {
+    font-size: 2.8rem;
+  }
+  .font-1-xl {
+    font-size: 1.4rem;
+  }
+  .font-1-l,
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 1.05rem;
+  }
+  .font-1-m,
+  .font-1-m-b,
+  .font-2-m {
+    font-size: 0.79rem;
+  }
+  .font-1-s,
+  .font-2-s {
+    font-size: 0.7rem;
+  }
+  .font-1-xs,
+  .font-2-xs {
+    font-size: 0.53rem;
+  }
+}

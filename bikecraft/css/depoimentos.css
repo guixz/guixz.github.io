@@ -1,0 +1,117 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.depoimento img {
+  max-height: 550px;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.depoimento blockquote {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  max-width: 25ch;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.depoimento blockquote::before {
+  color: var(--p2);
+  font-size: 5rem;
+  content: "“";
+  position: absolute;
+  left: -60px;
+  top: -30px;
+}
+
+.depoimento blockquote::after {
+  color: var(--p2);
+  font-size: 5rem;
+  content: "”";
+  position: absolute;
+  bottom: -70px;
+  right: 0px;
+}
+
+.depoimento-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 0px 0px 120px;
+  background: url(../img/dec/top-left-p.svg) no-repeat top 40px left 40px,
+    url(../img/dec/bottom-right-p.svg) no-repeat bottom 40px right 40px;
+}
+
+.depoimento-conteudo span {
+  margin-bottom: 80px;
+  display: block;
+}
+
+.depoimento-bg {
+  background: var(--p1);
+}
+
+@media screen and (max-width: 1400px) {
+  .depoimento-conteudo {
+    padding: 0px 0px 0px 70px;
+  }
+  .depoimento blockquote {
+    font-size: 1.75rem;
+  }
+  .depoimento blockquote::before,
+  .depoimento blockquote::after {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .depoimento blockquote {
+    font-size: 1.6rem;
+    max-width: 56ch;
+    margin-bottom: 10px;
+  }
+  .depoimento blockquote::before,
+  .depoimento blockquote::after {
+    font-size: 3rem;
+  }
+  .depoimento-conteudo {
+    padding: 20px;
+    background: url(../img/dec/top-left-p.svg) no-repeat top 20px left 20px,
+      url(../img/dec/bottom-right-p.svg) no-repeat bottom 20px right 20px;
+    background-size: 35px;
+    justify-content: center;
+  }
+  .depoimento-conteudo span {
+    margin-bottom: 0px;
+    display: block;
+  }
+  .depoimento blockquote::after {
+    bottom: -70px;
+    right: 0px;
+  }
+  .depoimento blockquote::before {
+    top: -40px;
+    left: -5px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .depoimento img {
+    grid-column: 1 / -1;
+  }
+  .depoimento-conteudo {
+    grid-column: 1 / -1;
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .depoimento-conteudo {
+    padding: 120px 20px;
+  }
+}

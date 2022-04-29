@@ -1,0 +1,87 @@
+.seguros-bg {
+  background: var(--c11);
+  background: url(../img/dec/bottom-left.svg) var(--c11) no-repeat bottom 40px
+    left 40px;
+  padding-bottom: 120px;
+}
+
+.seguros h2 {
+  padding: 60px 0px;
+}
+
+.seguros-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguro-prata,
+.seguro-ouro {
+  padding: 32px;
+  background: var(--c12);
+  border-radius: 5px;
+}
+
+.seguro-prata-preco span,
+.seguro-ouro-preco span {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+}
+
+.seguro-prata-header,
+.seguro-ouro-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seguro-prata .btn {
+  color: var(--c04);
+  background: var(--c10);
+  margin-left: 28px;
+}
+
+.seguro-ouro .btn {
+  margin-left: 28px;
+}
+
+.seguro-beneficios {
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.seguro-beneficios li {
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.seguro-beneficios li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  display: inline-block;
+  background: url(../img/icones/lista.svg) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: -20px;
+}
+
+.seguro-beneficios li:nth-last-child(1) {
+  margin-bottom: 32px;
+}
+
+.seguro-prata-header h3 {
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .seguros-lista {
+    display: block;
+  }
+  .seguro-prata {
+    margin-bottom: 40px;
+  }
+}

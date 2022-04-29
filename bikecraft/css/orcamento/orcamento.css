@@ -1,0 +1,372 @@
+#orcamento {
+  background: var(--c01);
+}
+
+.card-c1 label {
+  font-family: var(--poppins);
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.escolha-bikecraft {
+  display: grid;
+}
+
+.escolha-bikecraft input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.escolha-bikecraft label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 20px;
+  background: var(--c10);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.escolha-bikecraft label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--c10);
+  display: inline-block;
+  box-shadow: inset 0 0 0 4px var(--c10);
+  border-radius: 9px;
+  border: solid 2px var(--c07);
+  margin-right: 8px;
+}
+
+input[type="radio"]:checked + label {
+  background: white;
+  color: var(--c12);
+  border: solid 2px var(--p1);
+}
+
+input[type="radio"]:checked ~ .modelos label {
+  border-width: 2px 2px 0px 2px;
+}
+
+input[type="radio"]:checked ~ .modelos div {
+  border: solid 2px var(--p1);
+  border-width: 0px 2px 2px 2px;
+}
+
+input[type="radio"]:checked + label::before {
+  box-shadow: inset 0 0 0 3px white;
+  border: solid 2px var(--c07);
+  background: var(--c07);
+}
+
+.card-c1 input {
+  opacity: 0;
+  position: absolute;
+}
+
+.card-c1 label {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  position: relative;
+  display: inline-block;
+  color: var(--c04);
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--c10);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card-c1 label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--c10);
+  display: inline-block;
+  box-shadow: inset 0 0 0 4px var(--c10);
+  border-radius: 9px;
+  border: solid 2px var(--c07);
+  margin-right: 8px;
+}
+
+.orcamento-bg {
+  padding: 60px;
+  background: var(--c11);
+}
+
+.orcamento-card-bg {
+  background: linear-gradient(var(--c11) 30%, var(--c01) 0%);
+  background: linear-gradient();
+  padding-bottom: 120px;
+}
+
+.card-c1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  align-content: baseline;
+  gap: 0px 20px;
+  border-radius: 5px 0px 0px 5px;
+  background: url(/img/dec/top-right.svg) no-repeat var(--c12);
+  background-position: bottom 20px left 20px;
+}
+
+.escolha-bikecraft label {
+  color: var(--w);
+}
+
+.orcamento-card {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-c2 {
+  background: var(--w);
+  padding: 60px;
+  border-radius: 0px 5px 5px 0px;
+  background: url(/img/dec/bottom-right.svg) no-repeat var(--w);
+  background-position: bottom 20px right 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-cpf,
+.form-email,
+.form-checkbox {
+  grid-column: 1/-1;
+}
+
+.form-grid label {
+  color: var(--c11);
+  font-family: var(--poppins);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="number"],
+.form-grid input[type="email"] {
+  color: var(--c07);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--c01);
+  border: 2px solid var(--c02);
+  border-radius: 5px;
+}
+
+.form-grid input[type="text"]:hover,
+.form-grid input[type="number"]:hover,
+.form-grid input[type="email"]:hover {
+  border: solid 2px var(--p1);
+}
+
+.form-grid input[type="text"]:focus,
+.form-grid input[type="number"]:focus,
+.form-grid input[type="email"]:focus {
+  border: solid 2px var(--p1);
+}
+
+.form-grid select {
+  color: var(--c07);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--c01);
+  border: 2px solid var(--c04);
+  border-radius: 5px;
+}
+
+.form-grid select:hover {
+  border: solid 2px var(--p1);
+}
+
+.form-checkbox a {
+  text-decoration: underline;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.card-c2 label {
+  display: block;
+}
+
+.form-checkbox label {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.form-checkbox label {
+  padding-left: 35px;
+}
+
+.form-checkbox input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.form-checkbox span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--c04);
+  background: var(--c01);
+  border-radius: 5px;
+}
+
+.form-checkbox input:checked + span {
+  background-color: var(--p1);
+}
+
+.card-c1 h2 {
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+}
+
+.card-c1 h2:nth-child(2) {
+  margin-top: 40px;
+}
+
+.orcamento-card h2 {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.orcamento-card h2::before {
+  content: "";
+  height: 8px;
+  width: 4px;
+  background: var(--p1);
+  position: absolute;
+  left: -10px;
+}
+
+.form-grid:nth-child(2) h2 {
+  margin-top: 60px;
+}
+
+.form-grid h2 {
+  grid-column: 1 / -1;
+}
+
+.modelos,
+.seguros {
+  display: none;
+  grid-column: 1 / -1;
+  margin-top: 40px;
+}
+
+.modelos label,
+.seguros label {
+  margin-top: 20px;
+}
+
+/*  */
+#bikecraft:checked ~ .modelos {
+  display: initial;
+}
+
+#seguro:checked ~ .seguros {
+  display: initial;
+}
+
+#nimbus:checked + label[for="nimbus"] {
+  border-radius: 5px 5px 0px 0px;
+}
+
+#nimbus:checked ~ .modelo-nimbus {
+  display: grid;
+}
+
+#nebula:checked + label[for="nebula"] {
+  border-radius: 5px 5px 0px 0px;
+}
+
+#nebula:checked ~ .modelo-nebula {
+  display: grid;
+}
+
+#magic:checked + label[for="magic"] {
+  border-radius: 5px 5px 0px 0px;
+}
+
+#magic:checked ~ .modelo-magic {
+  display: grid;
+}
+
+.modelos > div {
+  background: var(--w);
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+  gap: 0px;
+  align-items: center;
+}
+
+.modelos li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.modelos li img {
+  height: 16px;
+  width: 16px;
+}
+
+/*  */
+
+@media screen and (max-width: 800px) {
+  .orcamento-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .orcamento-card > div {
+    padding: 40px;
+  }
+  .modelos > div {
+    grid-template-columns: 1fr;
+  }
+  .modelos > div > img {
+    grid-row: 1;
+  }
+  .card-c2 > div > div {
+    grid-column: 1 / -1;
+  }
+}
